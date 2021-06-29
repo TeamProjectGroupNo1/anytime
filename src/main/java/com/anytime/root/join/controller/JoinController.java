@@ -82,10 +82,6 @@ public class JoinController {
 	
 	@RequestMapping("SearchSchool")
 	public String ShowSearchSchool() {
-		
-		
-		
-		
 		//System.out.println("리스트 첫번째 결과 : " + schoolObject.getDataSearch().getContent().get(0).getSchoolName());
 		
 		return "join/SearchSchool";
@@ -132,6 +128,12 @@ public class JoinController {
 		
 		// 학교 데이터 값
 		return response.getBody();
+	}
+	
+	
+	@GetMapping(value = "generalUser")
+	public String generalUser() {
+		return "join/joinView";
 	}
 
 }
