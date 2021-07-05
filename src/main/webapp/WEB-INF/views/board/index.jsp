@@ -126,6 +126,21 @@ input[type="button"],input[type="submit"],input[type="search"] {
     word-break:break-all;
     }
     
+    
+    .bookTitle{
+    text-overflow: ellipsis; 
+    width: 125px;
+    
+    }
+    
+    .bookTitle label{
+    width: 125px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
     a.item{
     display: inline-block;
     margin-right: 5px;
@@ -333,10 +348,10 @@ input[type="button"],input[type="submit"],input[type="search"] {
 		<c:forEach var="list1" items="${previewBookShop}" varStatus="status">
         <a class="item" href="/root/bookshop/1/${list1.boardId }">
 		 <div class="image" >
-		 <img src="${previewBookShopPhoto[status.index].photo1 }" width="125px" height="120px">
+		 <img src="${previewBookShopPhoto[status.index].photo1 }" width="125px" height="150px">
 		 </div>
-		 <div style="word-break:break-all; text-overflow: ellipsis; width: 125px;">
-		 <label style="width: 125px; text-overflow: ellipsis;"><h6>${list1.booktitle}</h6></label>
+		 <div class="bookTitle" >
+		 <label>${list1.booktitle}</label>
 		 </div>
 		
 		<span class="price">${list1.price}</span>
