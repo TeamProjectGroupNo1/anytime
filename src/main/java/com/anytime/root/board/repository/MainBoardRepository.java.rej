@@ -1,0 +1,9 @@
+diff a/src/main/java/com/anytime/root/board/repository/MainBoardRepository.java b/src/main/java/com/anytime/root/board/repository/MainBoardRepository.java	(rejected hunks)
+@@ -27,6 +27,7 @@
+ 	
+ <<<<<<< HEAD
+ 	// 추가 부분
++=======
+ 	// �߰� �κ�
+ >>>>>>> 62696d768b2df0411daf25cfe5a237f3c7eedc00
+ 	public ArrayList<BookShopDTO> PreViewBookShop();

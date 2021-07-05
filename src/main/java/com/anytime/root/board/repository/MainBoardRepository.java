@@ -14,14 +14,22 @@ public interface MainBoardRepository {
 	public ArrayList<CommonLikeBoard> getCmnBoardByDate();
 	public ArrayList<SchoolLikeBoard> getSchoolBoardByDate(@Param("section")String section, @Param("school")String school);
 	public ArrayList<CommonLikeBoard> getCmnBoardByLike();
-	public ArrayList<SchoolLikeBoard> getSchoolBoardByLike(@Param("section")String section, @Param("school")String school);
-	public ArrayList<CommonLikeBoard> getMyCmnBoard(String id);
-	public ArrayList<SchoolLikeBoard> getMySchoolBoard(String id);
-	public ArrayList<Reply> getMyreplyList(String id);
+	public ArrayList<SchoolLikeBoard> getSchoolBoardByLike(String school);
+	public int cmnListCount(String id);
+	public int schoolListCount(String id);
+	public ArrayList<CommonLikeBoard> getMyCmnBoard(@Param("id")String id, @Param("start")int start, @Param("end")int end);
+	public ArrayList<SchoolLikeBoard> getMySchoolBoard(@Param("id")String id, @Param("start")int start, @Param("end")int end);
+	public ArrayList<Reply> getMycreplyList(String id);
+	public ArrayList<Reply> getMysreplyList(String id);
+	public String getSection(int postNo);
 	public ArrayList<CommonLikeBoard> getCmnBoardForAdmin();
 	public ArrayList<SchoolLikeBoard> getSchoolBoardForAdmin(String section);
 	
+<<<<<<< HEAD
 	// ì¶”ê°€ ë¶€ë¶„
+=======
+	// Ãß°¡ ºÎºÐ
+>>>>>>> 62696d768b2df0411daf25cfe5a237f3c7eedc00
 	public ArrayList<BookShopDTO> PreViewBookShop();
 	public ArrayList<BookShopPhotoDTO> PreViewBookShopPhoto();
 }
