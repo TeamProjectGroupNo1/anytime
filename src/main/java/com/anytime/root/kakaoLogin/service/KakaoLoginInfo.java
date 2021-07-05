@@ -17,7 +17,6 @@ public  final class KakaoLoginInfo {
 	public static final String Loginredirect_uri = localHostName+"root/auth/kakao/login/callback";// 여기도 맞게 변경바람
 	public static final String OauthToken_request = "https://kauth.kakao.com/oauth/token"; // 인증토큰주소
 	public static final String UserInfoSelect = "https://kapi.kakao.com/v2/user/me"; // 사용자 정보조회에 필요함
-	
 	public static final String ContentType = "application/x-www-form-urlencoded;charset=utf-8";
 	
 }

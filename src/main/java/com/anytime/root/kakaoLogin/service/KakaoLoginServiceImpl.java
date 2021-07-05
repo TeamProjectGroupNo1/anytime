@@ -91,7 +91,6 @@ public class KakaoLoginServiceImpl implements KaKaoLoginService {
 		ResponseEntity<String> response = rt2.exchange(KakaoLoginInfo.UserInfoSelect, HttpMethod.POST,
 				kakaoProfileRequest2, String.class);
 		
-		
 		// 회원 정보까지 조회하는게 response2.getbody()
 		
 		return response;
